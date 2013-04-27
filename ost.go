@@ -10,7 +10,7 @@ type action func(item string) (discard bool)
 // supplied: the source and the destination. This allows the caller to
 // implement two very common usage patterns: circular lists (where
 // source and destination are the same) and backups (where each worker
-// has its own backup queue). Wheter or not the item is discarded
+// has its own backup queue). Whether or not the item is discarded
 // depends on which usage pattern is implemented: for circular lists,
 // the destination queue is never discarded, whereas for backup queues
 // it is mandatory to cleanup the destination queue.
